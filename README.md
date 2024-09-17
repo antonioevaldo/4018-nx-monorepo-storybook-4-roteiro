@@ -16,8 +16,7 @@ Acesse o [Figma do Design System](https://www.figma.com/community/file/140231500
 
 As técnicas e tecnologias utilizadas pra isso são:
 
-- **Design System e Atomic Design**: criados pela equipe de design para
-  organizar o Design System da empresa
+- **Design System e Atomic Design**: criados pela equipe de design para organizar o Design System da empresa
 - **Angular**: framework utilizado para implementação dos componentes
 - **Nx e monorepo**: utilizados para criar e gerenciar aplicações e bibliotecas de forma produtiva
 - **Storybook**: ferramenta para criação de documentação interativa
@@ -25,7 +24,13 @@ As técnicas e tecnologias utilizadas pra isso são:
 
 ## 🛠️ Abrir e rodar o projeto
 
-Após baixar ou clonar o projeto, execute o seguinte comando para subir o servidor do Storybook:
+Após baixar ou clonar o projeto, instale as dependências:
+
+```bash
+npm i
+```
+
+Em seguida, execute o seguinte comando para subir o servidor do Storybook:
 
 ```bash
 npx nx run storybook-host:storybook

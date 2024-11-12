@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 type Text =
@@ -12,14 +12,14 @@ type Text =
 @Component({
   standalone: true,
   styleUrl: './typography.component.css',
-  template: `<h1>Título H1</h1>`,
+  template: ` <h1 class="typography">Título H1</h1> `,
 })
 export class H1Component {}
 
 @Component({
   standalone: true,
   styleUrl: './typography.component.css',
-  template: `<span>Texto span</span>`,
+  template: ` <span class="typography"> Texto span </span> `,
 })
 export class SpanComponent {}
 
@@ -30,8 +30,21 @@ export class SpanComponent {}
   templateUrl: './typography.component.html',
   styleUrl: './typography.component.css',
 })
-export class TypographyComponent {
+export class TypographyComponent implements OnInit {
   @Input() variant: Text = 'normal';
 
   component: any = SpanComponent;
+
+  private componentsMap = {
+    title1: H1Component,
+    title2: SpanComponent,
+    title3: SpanComponent,
+    subtitle1: SpanComponent,
+    subtitle2: SpanComponent,
+    normal: SpanComponent,
+  } satisfies { [key in Text]: any };
+
+  ngOnInit(): void {
+    this.component = this.componentsMap[this.variant];
+  }
 }

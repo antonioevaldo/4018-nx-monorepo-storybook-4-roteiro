@@ -12,7 +12,7 @@ const meta: Meta<TypographyComponent> = {
     */
     template: `
       <ab-typography ${argsToTemplate(args)}>
-        Text
+        Novo conteúdo
       </ab-typography>
     `,
   }),

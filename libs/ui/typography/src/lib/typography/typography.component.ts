@@ -1,4 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnInit,
+  TemplateRef,
+  ViewChild,
+  ViewContainerRef,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 type Text =
@@ -12,14 +19,22 @@ type Text =
 @Component({
   standalone: true,
   styleUrl: './typography.component.css',
-  template: ` <h1 class="typography">Título H1</h1> `,
+  template: `
+    <h1 class="typography">
+      <ng-content />
+    </h1>
+  `,
 })
 export class H1Component {}
 
 @Component({
   standalone: true,
   styleUrl: './typography.component.css',
-  template: ` <span class="typography"> Texto span </span> `,
+  template: `
+    <span class="typography">
+      <ng-content />
+    </span>
+  `,
 })
 export class SpanComponent {}
 
@@ -33,7 +48,11 @@ export class SpanComponent {}
 export class TypographyComponent implements OnInit {
   @Input() variant: Text = 'normal';
 
+  @ViewChild('template', { static: true }) template!: TemplateRef<unknown>;
+
   component: any = SpanComponent;
+
+  dynamicComponentContent!: any[][];
 
   private componentsMap = {
     title1: H1Component,
@@ -44,7 +63,15 @@ export class TypographyComponent implements OnInit {
     normal: SpanComponent,
   } satisfies { [key in Text]: any };
 
+  constructor(private viewContainerRef: ViewContainerRef) {}
+
   ngOnInit(): void {
     this.component = this.componentsMap[this.variant];
+
+    const templateContent = this.viewContainerRef.createEmbeddedView(
+      this.template
+    ).rootNodes;
+
+    this.dynamicComponentContent = [templateContent];
   }
 }

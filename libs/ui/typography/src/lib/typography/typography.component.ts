@@ -16,27 +16,42 @@ type Text =
   | 'subtitle2'
   | 'normal';
 
-@Component({
-  standalone: true,
-  styleUrl: './typography.component.css',
-  template: `
-    <h1 class="typography">
-      <ng-content />
-    </h1>
-  `,
-})
-export class H1Component {}
+type Size =
+  | 'title1'
+  | 'title2'
+  | 'title3'
+  | 'subtitle1'
+  | 'subtitle2'
+  | 'lg'
+  | 'md'
+  | 'sm'
+  | 'xs';
 
 @Component({
   standalone: true,
   styleUrl: './typography.component.css',
   template: `
-    <span class="typography">
+    <h1 class="typography {{ size }}">
+      <ng-content />
+    </h1>
+  `,
+})
+export class H1Component {
+  @Input() size!: Size;
+}
+
+@Component({
+  standalone: true,
+  styleUrl: './typography.component.css',
+  template: `
+    <span class="typography {{ size }}">
       <ng-content />
     </span>
   `,
 })
-export class SpanComponent {}
+export class SpanComponent {
+  @Input() size!: Size;
+}
 
 @Component({
   selector: 'ab-typography',
@@ -47,12 +62,17 @@ export class SpanComponent {}
 })
 export class TypographyComponent implements OnInit {
   @Input() variant: Text = 'normal';
+  @Input() size!: Size;
 
   @ViewChild('template', { static: true }) template!: TemplateRef<unknown>;
 
   component: any = SpanComponent;
 
   dynamicComponentContent!: any[][];
+
+  get inputs() {
+    return { size: this.size };
+  }
 
   private componentsMap = {
     title1: H1Component,

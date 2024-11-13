@@ -1,17 +1,34 @@
-import type { Meta, StoryObj } from '@storybook/angular';
+import { argsToTemplate, type Meta, type StoryObj } from '@storybook/angular';
 import { ButtonComponent } from '@alfabit-alura/button';
 
-const meta: Meta<ButtonComponent> = {
+type ButtonInputsAndCustomArgs = ButtonComponent & { text: string };
+
+const meta: Meta<ButtonInputsAndCustomArgs> = {
   component: ButtonComponent,
+  args: {
+    text: 'Action',
+  },
+  render: ({ text, ...buttonArgs }) => ({
+    props: buttonArgs,
+    template: `
+      <ab-button ${argsToTemplate(buttonArgs)}>
+        ${text}
+      </ab-button>
+    `,
+  }),
+  parameters: {
+    controls: {
+      exclude: ['getClasses'],
+    },
+  },
 };
 
 export default meta;
 
-type Story = StoryObj<ButtonComponent>;
+type Story = StoryObj<ButtonInputsAndCustomArgs>;
 
 export const PrimaryButton: Story = {
   args: {
-    text: 'Action',
     variant: 'primary',
     disabled: false,
     theme: 'blue',

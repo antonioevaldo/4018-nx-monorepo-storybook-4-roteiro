@@ -44,3 +44,10 @@ export const Open: Story = {
     isOpen: true,
   },
 };
+
+export const Closed: Story = {
+  args: {
+    ...Open.args,
+    isOpen: false,
+  },
+};

@@ -9,6 +9,8 @@ export default meta;
 
 type Story = StoryObj<ModalComponent>;
 
-export const Primary: Story = {
-  args: {},
+export const Open: Story = {
+  args: {
+    isOpen: true,
+  },
 };

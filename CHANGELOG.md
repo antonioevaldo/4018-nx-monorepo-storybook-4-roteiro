@@ -1,3 +1,19 @@
+## 2.1.0 (2024-11-14)
+
+
+### 🚀 Features
+
+- **modal:** cria componente e story ([e1161c8](https://github.com/antonio-evaldo/4017-nx-monorepo-storybook-3/commit/e1161c8))
+- **modal:** utiliza elemento dialog e controla exibição com Input `isOpen` ([1fb827f](https://github.com/antonio-evaldo/4017-nx-monorepo-storybook-3/commit/1fb827f))
+- **modal:** desenvolve HTML e CSS ([b2a89e0](https://github.com/antonio-evaldo/4017-nx-monorepo-storybook-3/commit/b2a89e0))
+- **modal:** emite evento de fechamento ([44d7cb3](https://github.com/antonio-evaldo/4017-nx-monorepo-storybook-3/commit/44d7cb3))
+- **storybook-host:** utiliza typography e button no story do modal ([94ede34](https://github.com/antonio-evaldo/4017-nx-monorepo-storybook-3/commit/94ede34))
+- **storybook-host:** adiciona documentação e story para modal ([08d0536](https://github.com/antonio-evaldo/4017-nx-monorepo-storybook-3/commit/08d0536))
+
+### ❤️  Thank You
+
+- Antônio Evaldo @antonio-evaldo
+
 # 2.0.0 (2024-11-13)
 
 

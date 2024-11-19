@@ -4,11 +4,13 @@
 
 Monorepo criado para implementação do Design System da empresa fictícia Alfabit, uma empresa de consultoria de software. Reconhecendo a importância do design consistente e intuitivo em todas as suas plataformas e produtos, a Alfabit decidiu investir em um Design System de ponta.
 
-![Interface do Storybook exibindo exemplos de botões de uma biblioteca de componentes. À esquerda, há um menu com uma lista de stories organizados sob a pasta "button", incluindo 12 variantes de botões como "Primary Button", "Secondary Button", e suas versões desabilitadas. À direita, estão as pré-visualizações interativas dos componentes "Primary Button", "Primary Button Disabled" e "Secondary Button", cada um com a opção de visualizar o código fonte.](./project-thumb.png)
+![Interface do Storybook exibindo o componente Input. À esquerda, há um menu com uma lista de componentes organizados sob as categorias "Moléculas" e "Átomos", além de algumas páginas de documentação, como "Introdução". À direita, está a pré-visualização interativa do Input com a opção de visualizar o código fonte, além de uma seção com campos para interagir com o componente dinamicamente. A opção 'multiline' indica que o campo pode aceitar múltiplas linhas de texto, ou seja, o usuário pode pressionar 'enter' para iniciar uma nova linha. A opção 'label' permite adicionar um rótulo ao campo, indicando qual tipo de informação deve ser inserida.](./project-thumb.png)
 
 ## 🔨 Funcionalidades do projeto
 
-A biblioteca de botão criada no monorepo (mono-repositório) pode ser visualizada em um servidor do Storybook, onde foi feita uma documentação interativa do componente. Além disso, a publicação da biblioteca de botão foi automatizada com o Nx Release.
+As bibliotecas de botão e de input criadas no monorepo (mono-repositório) podem ser visualizadas em um servidor do Storybook, onde foi feita uma documentação interativa dos componentes. A publicação das bibliotecas foi automatizada com o Nx Release e o Chromatic foi utilizado para publicação do Storybook e automação de testes visuais.
+
+O próximo passo agora é desenvolver mais componentes do Design System: o `typography` e o `modal`. Com esses novos componentes, iremos lidar com dependências entre bibliotecas e suas publicações.
 
 Acesse o [Figma do Design System](https://www.figma.com/community/file/1402315008064949507).
 
@@ -20,6 +22,7 @@ As técnicas e tecnologias utilizadas pra isso são:
 - **Angular**: framework utilizado para implementação dos componentes
 - **Nx e monorepo**: utilizados para criar e gerenciar aplicações e bibliotecas de forma produtiva
 - **Storybook**: ferramenta para criação de documentação interativa
+- **Chromatic**: ferramenta para publicação do Storybook e automação de testes visuais
 - **Nx Release**: recurso do Nx que facilita a automatização da publicação de bibliotecas
 
 ## 🛠️ Abrir e rodar o projeto

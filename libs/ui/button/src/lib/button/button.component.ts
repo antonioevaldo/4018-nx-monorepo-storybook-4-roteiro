@@ -21,6 +21,9 @@ export class ButtonComponent {
    * Define se o botão está desabilitado.
    */
   @Input() disabled = false;
+  /**
+   * Define o tema do botão.
+   */
   @Input() theme: Theme = 'blue';
 
   getClasses(): string {

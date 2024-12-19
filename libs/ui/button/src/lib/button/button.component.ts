@@ -14,7 +14,7 @@ type Theme = 'blue' | 'violet';
 })
 export class ButtonComponent {
   /**
-   * Define variante do botão.
+   * Define a variante do botão.
    */
   @Input() variant: Variant = 'primary';
   /**

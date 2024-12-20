@@ -1,5 +1,5 @@
 import { argsToTemplate, type Meta, type StoryObj } from '@storybook/angular';
-import { TypographyComponent } from '@alfabit-alura/typography';
+import { TypographyComponent } from '@alfabit-alura-teste/typography';
 
 type TypographyArgsAndCustomArgs = TypographyComponent & { text: string };
 

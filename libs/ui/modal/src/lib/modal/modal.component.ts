@@ -8,7 +8,7 @@ import {
   ViewChild,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TypographyComponent } from '@alfabit-alura/typography';
+import { TypographyComponent } from '@alfabit-alura-teste/typography';
 
 @Component({
   selector: 'ab-modal',

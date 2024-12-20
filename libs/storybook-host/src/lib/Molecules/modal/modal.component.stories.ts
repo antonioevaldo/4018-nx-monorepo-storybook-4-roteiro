@@ -4,9 +4,9 @@ import {
   type Meta,
   type StoryObj,
 } from '@storybook/angular';
-import { ModalComponent } from '@alfabit-alura/modal';
-import { ButtonComponent } from '@alfabit-alura/button';
-import { TypographyComponent } from '@alfabit-alura/typography';
+import { ModalComponent } from '@alfabit-alura-teste/modal';
+import { ButtonComponent } from '@alfabit-alura-teste/button';
+import { TypographyComponent } from '@alfabit-alura-teste/typography';
 
 const meta: Meta<ModalComponent> = {
   component: ModalComponent,

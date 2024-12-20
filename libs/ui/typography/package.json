@@ -1,5 +1,5 @@
 {
-  "name": "@alfabit-alura/typography",
+  "name": "@alfabit-alura-teste/typography",
   "version": "2.1.0",
   "peerDependencies": {
     "@angular/common": "^17.3.0",

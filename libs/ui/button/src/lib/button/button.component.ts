@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TypographyComponent } from '@alfabit-alura/typography';
+import { TypographyComponent } from '@alfabit-alura-teste/typography';
 
 type Variant = 'primary' | 'secondary' | 'tertiary';
 type Theme = 'blue' | 'violet';

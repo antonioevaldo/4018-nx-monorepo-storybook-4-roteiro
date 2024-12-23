@@ -1,3 +1,25 @@
+## 2.6.0 (2024-12-23)
+
+
+### 🚀 Features
+
+- adiciona JSDoc no botão ([6d0ef6b](https://github.com/antonioevaldo/4018-nx-monorepo-storybook-4-roteiro/commit/6d0ef6b))
+- **button:** adiciona JSDoc ([f4784b9](https://github.com/antonioevaldo/4018-nx-monorepo-storybook-4-roteiro/commit/f4784b9))
+- **button:** adiciona JSDoc ([95469cb](https://github.com/antonioevaldo/4018-nx-monorepo-storybook-4-roteiro/commit/95469cb))
+- **button:** alterar cor de fundo do botão secundário ([af7aec0](https://github.com/antonioevaldo/4018-nx-monorepo-storybook-4-roteiro/commit/af7aec0))
+- **modal:** muda espaçamento interno ([0bc7e0b](https://github.com/antonioevaldo/4018-nx-monorepo-storybook-4-roteiro/commit/0bc7e0b))
+
+### 🩹 Fixes
+
+- **button:** corrige cor de fundo ([163ba95](https://github.com/antonioevaldo/4018-nx-monorepo-storybook-4-roteiro/commit/163ba95))
+- **eslint:** remove dependências não utilizadas nos projetos ([6baf8ff](https://github.com/antonioevaldo/4018-nx-monorepo-storybook-4-roteiro/commit/6baf8ff))
+- **modal:** corrige espaçamento interno ([341d2f8](https://github.com/antonioevaldo/4018-nx-monorepo-storybook-4-roteiro/commit/341d2f8))
+- **storybook-host:** corrige nome do arquivo para ser identificado pelo Compodoc ([1e1e59e](https://github.com/antonioevaldo/4018-nx-monorepo-storybook-4-roteiro/commit/1e1e59e))
+
+### ❤️  Thank You
+
+- Antônio Evaldo @antonio-evaldo
+
 ## 2.1.0 (2024-11-14)
 
 

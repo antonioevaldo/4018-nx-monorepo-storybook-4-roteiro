@@ -9,7 +9,7 @@ on:
     paths-ignore:
       - '**/package.json'
       - '**/CHANGELOG.md'
-      - .github/workflows/**
+
   pull_request:
 
 permissions:

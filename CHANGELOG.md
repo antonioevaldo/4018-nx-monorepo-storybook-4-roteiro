@@ -1,3 +1,7 @@
+## 2.6.11 (2025-01-08)
+
+This was a version bump only, there were no code changes.
+
 ## 2.6.10 (2025-01-08)
 
 This was a version bump only, there were no code changes.

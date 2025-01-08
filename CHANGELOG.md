@@ -1,3 +1,14 @@
+## 2.6.9 (2025-01-08)
+
+
+### 🩹 Fixes
+
+- corrige nome do arquivo do `paths-ignore` ([b067f5f](https://github.com/antonioevaldo/4018-nx-monorepo-storybook-4-roteiro/commit/b067f5f))
+
+### ❤️  Thank You
+
+- Antônio Evaldo
+
 ## 2.6.8 (2025-01-08)
 
 This was a version bump only, there were no code changes.

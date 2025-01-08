@@ -6,6 +6,9 @@ on:
       - main
     tags-ignore:
       - v*.*.*
+    paths-ignore:
+      - '**/package.json'
+      - '**/README.md'
   pull_request:
 
 permissions:

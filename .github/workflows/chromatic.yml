@@ -2,8 +2,13 @@ name: 'Chromatic'
 
 on:
   push:
+    branches:
+      - '**'
     tags-ignore:
       - v*.*.*
+    paths-ignore:
+      - '**/package.json'
+      - '**/CHANGELOG.md'
 
 env:
   NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}

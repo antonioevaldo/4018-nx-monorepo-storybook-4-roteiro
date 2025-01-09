@@ -1,3 +1,7 @@
+## 2.6.16 (2025-01-09)
+
+This was a version bump only, there were no code changes.
+
 ## 2.6.15 (2025-01-09)
 
 This was a version bump only, there were no code changes.

@@ -2,8 +2,6 @@ name: 'Chromatic'
 
 on:
   push:
-    branches:
-      - '**'
     paths-ignore:
       - '**/package.json'
       - '**/CHANGELOG.md'
